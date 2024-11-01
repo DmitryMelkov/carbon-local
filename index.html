@@ -11,47 +11,37 @@
 <body>
 
   <div class="container">
-    <h1>Мониторинг объектов</h1>
-
-    <!-- Контейнер вкладок -->
     <div class="tab-container">
-      <button class="tab-button" onclick="openTab('carbonization-1')">Печь карбонизации-1</button>
-      <button class="tab-button" onclick="openTab('carbonization-2')">Печь карбонизации-2</button>
-      <button class="tab-button" onclick="openTab('mpa-2')">МПА-2</button>
-      <button class="tab-button" onclick="openTab('mpa-3')">МПА-3</button>
-      <button class="tab-button" onclick="openTab('dryer-1')">Сушилка-1</button>
-      <button class="tab-button" onclick="openTab('dryer-2')">Сушилка-2</button>
+      <button class="tab-container__button" data-tab="carbonization-1">Печь карбонизации-1</button>
+      <button class="tab-container__button" data-tab="carbonization-2">Печь карбонизации-2</button>
     </div>
 
     <!-- Контейнеры контента для каждой вкладки -->
     <div id="carbonization-1" class="tab-content">
-      <h2>Печь карбонизации-1</h2>
-      <p>Текущие параметры, мнемосхема, графики температуры, давления/разрежения.</p>
+      <div class="tab-container-box">
+        <h2 class="tab-content__title title-reset">Печь карбонизации-1</h2>
+        <div class="tab-content__sub-tab-container">
+          <button class="sub-tab-button" data-url="/current-pech-vr-1">Текущие параметры</button>
+          <button class="sub-tab-button" data-url="/mnemo-pech-vr-1">Мнемосхема</button>
+        </div>
+      </div>
+
+      <div class="iframe-container">
+        <iframe id="carbonization-1-frame" src="" width="100%" height="100%"></iframe>
+      </div>
     </div>
 
     <div id="carbonization-2" class="tab-content">
-      <h2>Печь карбонизации-2</h2>
-      <p>Текущие параметры, мнемосхема, графики температуры, давления/разрежения.</p>
-    </div>
-
-    <div id="mpa-2" class="tab-content">
-      <h2>МПА-2</h2>
-      <p>Текущие параметры, мнемосхема, графики температуры, давления/разрежения.</p>
-    </div>
-
-    <div id="mpa-3" class="tab-content">
-      <h2>МПА-3</h2>
-      <p>Текущие параметры, мнемосхема, графики температуры, давления/разрежения.</p>
-    </div>
-
-    <div id="dryer-1" class="tab-content">
-      <h2>Сушилка-1</h2>
-      <p>Текущие параметры, мнемосхема, графики температуры, давления/разрежения.</p>
-    </div>
-
-    <div id="dryer-2" class="tab-content">
-      <h2>Сушилка-2</h2>
-      <p>Текущие параметры, мнемосхема, графики температуры, давления/разрежения.</p>
+      <div class="tab-container-box">
+        <h2 class="tab-content__title title-reset">Печь карбонизации-2</h2>
+        <div class="tab-content__sub-tab-container">
+          <button class="sub-tab-button" data-url="/current-pech-vr-2">Текущие параметры</button>
+          <button class="sub-tab-button" data-url="/mnemo-pech-vr-2">Мнемосхема</button>
+        </div>
+      </div>
+      <div class="iframe-container">
+        <iframe id="carbonization-2-frame" src="" width="100%" height="100%"></iframe>
+      </div>
     </div>
   </div>
 
