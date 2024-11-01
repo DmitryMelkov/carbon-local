@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Мониторинг объектов</h1>
+
+    <!-- Контейнер вкладок -->
+    <div class="tab-container">
+      <button class="tab-button" onclick="openTab('carbonization-1')">Печь карбонизации-1</button>
+      <button class="tab-button" onclick="openTab('carbonization-2')">Печь карбонизации-2</button>
+      <button class="tab-button" onclick="openTab('mpa-2')">МПА-2</button>
+      <button class="tab-button" onclick="openTab('mpa-3')">МПА-3</button>
+      <button class="tab-button" onclick="openTab('dryer-1')">Сушилка-1</button>
+      <button class="tab-button" onclick="openTab('dryer-2')">Сушилка-2</button>
+    </div>
+
+    <!-- Контейнеры контента для каждой вкладки -->
+    <div id="carbonization-1" class="tab-content">
+      <h2>Печь карбонизации-1</h2>
+      <p>Текущие параметры, мнемосхема, графики температуры, давления/разрежения.</p>
+    </div>
+
+    <div id="carbonization-2" class="tab-content">
+      <h2>Печь карбонизации-2</h2>
+      <p>Текущие параметры, мнемосхема, графики температуры, давления/разрежения.</p>
+    </div>
+
+    <div id="mpa-2" class="tab-content">
+      <h2>МПА-2</h2>
+      <p>Текущие параметры, мнемосхема, графики температуры, давления/разрежения.</p>
+    </div>
+
+    <div id="mpa-3" class="tab-content">
+      <h2>МПА-3</h2>
+      <p>Текущие параметры, мнемосхема, графики температуры, давления/разрежения.</p>
+    </div>
+
+    <div id="dryer-1" class="tab-content">
+      <h2>Сушилка-1</h2>
+      <p>Текущие параметры, мнемосхема, графики температуры, давления/разрежения.</p>
+    </div>
+
+    <div id="dryer-2" class="tab-content">
+      <h2>Сушилка-2</h2>
+      <p>Текущие параметры, мнемосхема, графики температуры, давления/разрежения.</p>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
