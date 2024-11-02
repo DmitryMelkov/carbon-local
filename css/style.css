@@ -212,14 +212,18 @@ img {
 
 /* Sub-tab Button Styles */
 .tab-content__sub-tab-container {
-  display: flex;
-  align-items: center;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  /* Зазор между кнопками */
+  padding: 10px;
 }
 
 .sub-tab-button {
-  padding: 8px 16px;
-  font-size: 14px;
-  line-height: 14px;
+  padding: 5px;
+  font-size: 12px;
+  line-height: 12px;
   font-weight: 600;
   color: green;
   border: 1px solid green;
@@ -228,9 +232,6 @@ img {
   cursor: pointer;
 }
 
-.sub-tab-button:not(:last-child) {
-  margin-right: 10px;
-}
 
 .sub-tab-button:hover {
   background-color: green;
